@@ -23,7 +23,6 @@
             <ul>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#installation">Installation</a></li>
-                <li><a href="#configuration">Configuration</a></li>
                 <li><a href="#utilisation">Utilisation</a></li>
                 <li><a href="#api">API</a></li>
                 <li><a href="#faq">FAQ</a></li>
@@ -36,13 +35,45 @@
             <p>Bienvenue sur la documentation de QuestMind...</p>
 
             <h1 id="installation">Installation</h1>
-            <p>Pour installer QuestMind, vous devez...</p>
-
-            <h1 id="configuration">Configuration</h1>
-            <p>Les variables d’environnement...</p>
-
-            <h1 id="utilisation">Utilisation</h1>
-            <p>Pour utiliser QuestMind, commencez par...</p>
+            <p>git clone  https://github.com/PnetStudio/QuestMind_web.git <br>
+                git checkout multiplatforme<br><br>
+                <br>
+                <br>
+                --Windows<br>
+                installe node-v20.18.0-x64<br>
+                npm install cross-env<br>
+                npm install bcrypt<br>
+                npm install bcryptjs<br>
+                npm install jsonwebtoken<br>
+                npm install axios<br>
+                npm audit fix --force<br>
+                cd backend<br>
+                npm install express<br>
+                Get-ExecutionPolicy<br>
+                Set-ExecutionPolicy -Scope CurrentUser RemoteSigned<br>
+                .\build.ps1 -Action start<br>
+                .\build.ps1 -Action stop<br>
+                <br>
+                <br>
+                --Linux<br>
+                sudo apt install node.js<br>
+                sudo apt install npm<br>
+                
+                git clone https://github.com/PnetStudio/QuestMind_web.git<br>
+                git checkout multiplatforme<br>
+                npm install cross-env<br>
+                npm install bcrypt<br>
+                npm install bcryptjs<br>
+                npm install axios<br>
+                npm install jsonwebtoken<br>
+                npm audit fix --force<br>
+                cd backend<br>
+                npm install express<br>
+                make start<br>
+                make stop<br>
+                <br>
+                Ajouter le fichier .env backend<br>
+                </p>
 
             <h1 id="api">API</h1>
             <p>La liste des endpoints de l’API est...</p>
